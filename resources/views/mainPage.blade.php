@@ -14,7 +14,7 @@
                 Contact me
             </button>
             <div class="pt-24">
-                Lorem ipsum dolor, sit amet consec veritatis! At magni architecto perspiciatis? Itaque odio sed quibusdam quia est quae, sit quaerat assumenda. Aut adipisci dolor, delectus quod quae id animi ipsum, vel doloribus dolores saepe facilis doloremque nesciunt quo consequatur facere sapiente voluptatibus veniam. Expedita ab exercitationem ad sed omnis fugit ratione repudiandae soluta dolorum, pariatur officia dolores, eaque sint quis quo doloremque rerum inventore quaerat tenetur recusandae odit. Ea, soluta laborum!
+                Als je veagen heb over iets kan je via email contact opnemen met mij door op de knop hierboven te klikken. Als je vragen of toevegingen heb aan mijn github projecten stuur mij dan via github een bericht. Je kan mij altijd gewoon een leuk bericht sturen als je gewoon even wil praten met iemand.
             </div> 
         </div>
 
@@ -30,10 +30,10 @@
             </div>
             <div class="flex w-full pt-6">
                 <div class="p-2">
-                    Mijn specialitieten zijn HTML, CSS en PHP. Ook kan ken ik de basis van python. Hiernaast heb ik meerdere kleine projecten gemaakt in programeertalen zoals P5.js, java, c++ & c.
+                    Mijn specialitieten zijn HTML, CSS en PHP. Ook kan ken ik de basis van python. Hiernaast heb ik meerdere kleine <a class="underline text-blue-600 decoration-indigo-500" href="https://localhost/public/contact">projecten</a> gemaakt in programeertalen zoals P5.js, java, c++ & c.
                 </div>
                 <div class="p-2"> 
-                    Een groot deel van mijn projecten staan op deze website. als je de code door wil lezen en meer informatie wil hebben over de projecten zelf kan je altijd mijn mijn <a href="https://github.com/Wazeback">github.</a>
+                    Een groot deel van mijn projecten staan op deze website. als je de code door wil lezen en meer informatie wil hebben over de projecten zelf kan je altijd mijn mijn <a class="underline text-blue-600 decoration-indigo-500" href="https://github.com/Wazeback">github.</a>
                 </div>
             </div>
         </div>
