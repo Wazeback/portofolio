@@ -1,0 +1,5 @@
+Host github.com
+  Hostname github.com
+  User git
+  PreferredAuthentication publickey
+  IdentityFile ~/.ssh/id_rsa
