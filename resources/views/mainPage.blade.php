@@ -52,7 +52,28 @@
         <div class="flex justify-center">
             <h1 class="font-bold leading-tight text-8xl mt-0 mb-2 text-blue-600">PROJECTS</h1>
         </div>
-        <hr class="h-24">
+        <div class="flex justify-center">
+            <div class="w-[90%] h-2 bg-slate-300"></div>
+        </div>
+        <div class="flex overflow-x-scroll h-[40%] mt-24">
+            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+
+            </div>
+            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+                
+            </div>
+            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+
+            </div>
+            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+
+            </div>
+            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 </x-guest-layout>  
 </body>
