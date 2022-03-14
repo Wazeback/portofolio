@@ -55,24 +55,26 @@
         <div class="flex justify-center">
             <div class="w-[90%] h-2 bg-slate-300"></div>
         </div>
-        <div class="flex overflow-x-scroll h-[40%] mt-24">
-            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+        <div class="flex justify-center items-center">
+            <div class="flex overflow-x-scroll w-[80%] h-[65%] mt-24 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300">
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
 
-            </div>
-            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
-                
-            </div>
-            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+                </div>
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
+                    
+                </div>
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
 
-            </div>
-            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+                </div>
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
 
-            </div>
-            <div class="w-96 h-64 px-4 flex-shrink-0 bg-black mx-10">
+                </div>
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
 
+                </div>
             </div>
         </div>
-    </div>
+    </div>  
 </div>
 </div>
 </x-guest-layout>  
