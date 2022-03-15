@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-scroll snap-x scrollbar-thin scrollbar-thumb-white  scrollbar-track-indigo-500">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
                         Contact me 
                     </a>
                     <div class="pt-24">
-                        Als je veagen heb over iets kan je via email contact opnemen met mij door op de knop hierboven te klikken. Als je vragen of toevegingen heb aan mijn github projecten stuur mij dan via github een bericht. Je kan mij altijd gewoon een leuk bericht sturen als je gewoon even wil praten met iemand.
+                        Als je vragen heb over iets kan je via email contact opnemen met mij door op de knop hierboven te klikken. Als je vragen of toevegingen heb aan mijn github projecten stuur mij dan via github een bericht. Je kan mij altijd gewoon een leuk bericht sturen als je gewoon even wil praten met iemand.
                     </div>
                 </div>
 
@@ -33,7 +33,7 @@
                     </div>
                     <div class="flex w-full pt-6">
                         <div class="p-2">
-                            Mijn specialitieten zijn HTML, CSS en PHP. Ook kan ken ik de basis van python. Hiernaast heb ik meerdere kleine <a class="underline text-blue-600 decoration-indigo-500" href="https://localhost/public/contact">projecten</a> gemaakt in programeertalen zoals P5.js, java, c++ & c.
+                            Mijn specialitieten zijn HTML, CSS en PHP. Ook kan ken ik de basis van python. Hiernaast heb ik meerdere kleine <a class="underline text-blue-600 decoration-indigo-500" href="{{ asset ('/projects') }}">projecten</a> gemaakt in programeertalen zoals P5.js, java, c++ & c.
                         </div>
                         <div class="p-2"> 
                             Een groot deel van mijn projecten staan op deze website. als je de code door wil lezen en meer informatie wil hebben over de projecten zelf kan je altijd mijn mijn <a class="underline text-blue-600 decoration-indigo-500" href="https://github.com/Wazeback">github.</a>
@@ -55,22 +55,62 @@
         <div class="flex justify-center">
             <div class="w-[90%] h-2 bg-slate-300"></div>
         </div>
-        <div class="flex justify-center items-center">
-            <div class="flex overflow-x-scroll w-[80%] h-[65%] mt-24 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300">
-                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
-
+        <div class="flex self-center w-[80%] h-[80%]">
+            <div class="flex overflow-x-scroll snap-x w-[100%] h-[80%] mt-24 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300">
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 mx-10 snap-end snap-start">
+                    <div class="w-full h-1/2 bg-black">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text-2xl flex justify-center text-blue font-bold text-lg py-[3%]">
+                        projects name
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe officiis nulla fugit, nobis quis magni optio quidem aliquid reiciendis dicta sed magnam provident repellendus, autem cupiditate veritatis ex. Minus!
+                    </div>
                 </div>
-                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
-                    
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 mx-10 snap-end snap-start">
+                    <div class="w-full h-1/2 bg-black">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text-2xl flex justify-center text-blue font-bold text-lg py-[3%]">
+                        projects name
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe officiis nulla fugit, nobis quis magni optio quidem aliquid reiciendis dicta sed magnam provident repellendus, autem cupiditate veritatis ex. Minus!
+                    </div>
                 </div>
-                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
-
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 mx-10 snap-end snap-start">
+                    <div class="w-full h-1/2 bg-black">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text-2xl flex justify-center text-blue font-bold text-lg py-[3%]">
+                        projects name
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe officiis nulla fugit, nobis quis magni optio quidem aliquid reiciendis dicta sed magnam provident repellendus, autem cupiditate veritatis ex. Minus!
+                    </div>
                 </div>
-                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
-
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 mx-10 snap-end snap-start">
+                    <div class="w-full h-1/2 bg-black">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text-2xl flex justify-center text-blue font-bold text-lg py-[3%]">
+                        projects name
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe officiis nulla fugit, nobis quis magni optio quidem aliquid reiciendis dicta sed magnam provident repellendus, autem cupiditate veritatis ex. Minus!
+                    </div>
                 </div>
-                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 bg-black mx-10">
-
+                <div class="w-[30%] h-[80%] px-4 flex-shrink-0 mx-10 snap-end snap-start">
+                    <div class="w-full h-1/2 bg-black">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text-2xl flex justify-center text-blue font-bold text-lg py-[3%]">
+                        projects name
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe officiis nulla fugit, nobis quis magni optio quidem aliquid reiciendis dicta sed magnam provident repellendus, autem cupiditate veritatis ex. Minus!
+                    </div>
                 </div>
             </div>
         </div>
