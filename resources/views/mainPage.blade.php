@@ -34,7 +34,7 @@
                             Mijn specialitieten zijn HTML, CSS en PHP. Ook kan ken ik de basis van python. Hiernaast heb ik meerdere kleine <a class="underline text-blue-600 decoration-indigo-500" href="#scrollToProjects">projecten</a> gemaakt in programeertalen zoals P5.js, java, c++ & c.
                         </div>
                         <div class="p-2"> 
-                            Een groot deel van mijn projecten staan op deze website. als je de code door wil lezen en meer informatie wil hebben over de projecten zelf kan je altijd mijn mijn <a class="underline text-blue-600 decoration-indigo-500" href="https://github.com/Wazeback">github.</a>
+                            Een groot deel van mijn projecten staan op deze website. als je de code door wil lezen en meer informatie wil hebben over de projecten zelf kan je altijd mijn <a class="underline text-blue-600 decoration-indigo-500" href="https://github.com/Wazeback">github.</a>
                         </div>
                     </div>
                 </div>

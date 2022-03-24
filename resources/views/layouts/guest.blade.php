@@ -24,7 +24,7 @@
     <header class="w-[92%] bg-white mx-auto rounded-br-[2rem] rounded-[2rem] mt-12">
         <div class="h-24 flex justify-between items-center">
             <div class="flex m-2">
-                <a href="#scrollToProjects"> 
+                <a href="{{ asset ('/') }}"> 
                 <img src="images/61972.png" alt="HOMEPAGE" class="w-20 h-20 m-6">
                 </a>
             </div>
@@ -62,7 +62,7 @@
                     </svg>
                 </a>
                 <div class="flex p-[10px]">
-                    <a href=" {{ asset ('/mainpage') }}"> 
+                    <a href=" {{ asset ('/') }}"> 
                         <img src="images/61972.png" alt="mijn mooie hoofd" class="w-12 h-12">
                     </a>
                 </div>
