@@ -17,12 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', ['App\http\Controllers\IndexController', 'index']);
 
 
-// Route::get('login', function () {
-//     return view('login');
-// });
-
-
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

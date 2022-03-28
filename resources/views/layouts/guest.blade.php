@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="bg-indigo-500" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +20,11 @@
     <style>
         html{scroll-behavior:smooth}
     </style>
+
+
+
+
+    <body>
 
     <header class="w-[92%] bg-white mx-auto rounded-br-[2rem] rounded-[2rem] mt-12">
         <div class="h-24 flex justify-between items-center">
@@ -43,13 +48,11 @@
     </header>
 
 
-    <body>
-        <div class="font-sans text-gray-900 antialiased">
+        <div class="font-sans text-gray-900 antialiased ">
             {{ $slot }}
         </div>
-    </body>
 
-    <footer class="w-[92%] bg-white mx-auto rounded-br-[2rem] rounded-[2rem] my-12">
+        <footer class="w-[92%] bg-white mx-auto rounded-br-[2rem] rounded-[2rem] my-12">
         <div class="h-24">
             <div>
                 <div>
@@ -79,4 +82,8 @@
             </div>
         </div>
     </footer>
+
+    </body>
+
+
 </html>
