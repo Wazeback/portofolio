@@ -17,19 +17,12 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
 
-    <style>
-        html{scroll-behavior:smooth}
-    </style>
-
-
-
-
     <body>
 
     <header class="w-[92%] bg-white mx-auto rounded-br-[2rem] rounded-[2rem] mb-12 md:mb-0 mt-12">
-        <div class="h-24 flex justify-between items-center">                       
+        <div class="h-24 flex justify-between items-center">
             <div class="hidden md:flex m-2">
-                <a href="{{ asset ('/') }}"> 
+                <a href="{{ asset ('/') }}">
                 <img src="images/61972.png" alt="HOMEPAGE" class="w-20 h-20 m-6">
                 </a>
             </div>
@@ -47,7 +40,7 @@
                     <li><a href="#scrollToProjects">Projects</a></li>
                     <li><a href="#scrollToContact">Contact</a></li>
                     </ul>
-                </nav> 
+                </nav>
             </div>
 
             <div class="menu-bg" id="menu-bg"></div>
@@ -55,103 +48,6 @@
 
 
             <style>
-                #menu {
-                z-index: 2;
-                }
-
-                #menu-bar {
-                width: 45px;
-                height: 40px;
-                margin: 30px 0 20px 20px;
-                cursor: pointer;
-                }
-
-                .bar {
-                height: 5px;
-                width: 100%;
-                background-color: #0d18b5;
-                display: block;
-                border-radius: 5px;
-                transition: 0.3s ease;
-                }
-
-                #bar1 {
-                transform: translateY(-4px);
-                }
-
-                #bar3 {
-                transform: translateY(4px);
-                }
-
-                .nav {
-                transition: 0.3s ease;
-                display: none;
-                }
-
-                .nav ul {
-                padding: 0 22px;
-                }
-
-                .nav li {
-                list-style: none;
-                padding: 12px 0;
-                }
-
-                .nav li a {
-                color: white;
-                font-size: 20px;
-                text-decoration: none;
-                }
-
-                .nav li a:hover {
-                font-weight: bold;
-                }
-
-                .menu-bg, #menu {
-                    position: relative;
-                }
-
-                .menu-bg {
-                z-index: 1;
-                width: 0;
-                height: 0;
-                margin: 30px 0 20px 20px;
-                background: radial-gradient(circle, #0d5eb5, #0d5eb5);
-                border-radius: 50%;
-                transition: 0.3s ease;
-                }
-
-                .change {
-                    margin-top: 200px;
-                    display: block;
-                }
-
-                .change .bar {
-                    /* margin-top: 200px; */
-                background-color: white;
-                }
-
-                .change #bar1 {
-                    margin-top: 200px;
-                transform: translateY(4px) rotateZ(-45deg);
-                }
-
-                .change #bar2 {
-                    
-                opacity: 0;
-                }
-
-                .change #bar3 {
-                    margin-top: 200px;
-                transform: translateY(-6px) rotateZ(45deg);
-                }
-
-                .change-bg {
-                    margin-top: 400px;
-                width: 520px;
-                height: 460px;
-                transform: translate(-60%,-30%);
-                }
             </style>
 
 
@@ -188,7 +84,7 @@
                     </svg>
                 </a>
                 <div class="flex p-[10px]">
-                    <a href=" {{ asset ('/') }}"> 
+                    <a href=" {{ asset ('/') }}">
                         <img src="images/61972.png" alt="mijn mooie hoofd" class="w-12 h-12">
                     </a>
                 </div>

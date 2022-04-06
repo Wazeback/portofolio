@@ -19,6 +19,7 @@ class CreateProjectsTable extends Migration
             $table->string("picture");
             $table->longText("description");
             $table->boolean("active");
+            $table->boolean("progress");
             $table->timestamps();
         });
     }
