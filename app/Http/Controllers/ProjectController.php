@@ -14,7 +14,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('projects.index', ['projects' => Project::all()]);
+        return view('projects.index', ['projects' => Project::where('active',1)->get()]);
     }
 
     /**
@@ -24,18 +24,27 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        //
+        return view('projects.adding', ['projects' => Project::all()]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     *
      */
     public function store(Request $request)
     {
-        //
+        $path = $request->file('image')->store('image', ['disk'=>'public']);
+        Project::create([
+            'title' => $request->title,
+            'description' => $request->desc,
+            'progress' => $request->progress,
+            'picture' => $path,
+            'active'  => 1,
+
+         ]);
+         return redirect()->back();
     }
 
     /**
@@ -44,9 +53,12 @@ class ProjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Project $project)
     {
-        //
+        return view('projects.edit', [
+            'project' => $project
+        ]);
+
     }
 
     /**
@@ -56,9 +68,23 @@ class ProjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Project $project)
     {
-        //
+        // validatie
+        $request->validate([
+           'title'  => 'required|min:4'
+        ]);
+        // opslaan
+        $path = $request->file('image')->store('image', ['disk'=>'public']);
+        $project->title = $request->input('title');
+        $project->description = $request->input('desc');
+        $project->picture = $path;
+        $project->progress = $request->input('progress');
+
+
+        $project->save();
+        // terugsturen ergens heen (projecten denk ik)
+        return redirect()->view('projects.index', ['projects' => Project::all()]);
     }
 
     /**
@@ -69,6 +95,7 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        //
+        project::find($id)->delete();
+        return back();
     }
 }

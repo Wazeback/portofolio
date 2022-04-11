@@ -28,7 +28,7 @@
                                         <td>{{ $project->id }} </td>
                                         <td>{{ $project->title }}</td>
                                         <td>{{ $project->description }}</td>
-                                        <td><img calss="h-full w-full" src="{{ asset('/images/' . $project->picture) }}" alt=""></td>
+                                        <td><img class="h-full w-full" src="{{ asset( 'storage/' . $project->picture ) }}" alt=""></td>
                                         <td>
                                             @if ($project->progress == 1)
                                                 <div class="mx-4 bg-green-400 text-center rounded-lg ">Done</div>
@@ -37,7 +37,8 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <a href="{{ route('projects.edit', ['project'  => $project]) }}">Bewerken</a> / Verwijderen
+                                            <a href="{{ route('projects.edit', ['project'  => $project]) }}">Bewerken</a>
+                                            <form action="{{ route('projects.destroy', ['project'  => $project->id]) }}" method="post">@csrf @method('DELETE') <button type="submit">/verwijderen </button> </form>
                                         </td>
                                     </tr>
                                 @endforeach

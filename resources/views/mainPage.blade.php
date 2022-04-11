@@ -62,7 +62,7 @@
                         @foreach($projects as $project)
                             <div class="w-full md:w-[30%] h-[100%] px-0 md:px-4 flex-shrink-0 mx-0 md:mx-10 snap-end snap-start">
                                 <div class="w-full h-1/2 bg-black">
-                                    <img class="w-full h-full" src="{{ asset('/images/' . $project->picture) }}" alt="Project image">
+                                    <img class="h-full w-full" src="{{ asset( 'storage/' . $project->picture ) }}" alt="">a
                                 </div>
 
                                 <div class="text-2xl flex justify-center text-blue font-bold text-lg py-[3%]">
