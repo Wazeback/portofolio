@@ -64,7 +64,7 @@
                                 <div class="w-full h-1/2 bg-black">
                                     <img class="h-full w-full" src="{{ asset( 'storage/' . $project->picture ) }}" alt="">a
                                 </div>
-
+                                {{ $project->language->name }}
                                 <div class="text-2xl flex justify-center text-blue font-bold text-lg py-[3%]">
                                     {{ $project -> title }}
                                     @if ($project->progress == 1)
@@ -91,14 +91,15 @@
                     <div class="w-[90%] h-2 bg-slate-300"></div>
                 </div>
 
-                <form method="post">
+                <form enctype="multipart/form-data" action="{{ route('mails.store')}}" method="POST">
+                    @csrf
                     <div class="flex flex-col justify-center items-center">
                         <label class="text-4xl pt-12" for="name">Full name:</label>
                         <input type="text" name="name" class="w-1/2 h-16 border-8 rounded-full border-4 border-grey text-center" placeholder="Enter your name here...">
-                        <label class="text-4xl pt-6" for="name">Email:</label>
-                        <input type="email" name="email" class="w-1/2 h-16 border-8 rounded-full border-4 border-grey text-center" placeholder="name@example.com">
-                        <label class="text-4xl pt-6" for="name">Your question</label>
-                        <textarea type="text" name="question" class="w-3/4 h-64 border-8 border-4 border-grey rounded-lg md:rounded-full text-center pt-[1%]" placeholder="Enter your name here..."></textarea>
+                        <label class="text-4xl pt-6" for="mail">Email:</label>
+                        <input type="email" name="mail" class="w-1/2 h-16 border-8 rounded-full border-4 border-grey text-center" placeholder="name@example.com">
+                        <label class="text-4xl pt-6" for="message">Your question</label>
+                        <textarea type="text" name="message" class="w-3/4 h-64 border-8 border-4 border-grey rounded-lg md:rounded-full text-center pt-[1%]" placeholder="Enter your name here..."></textarea>
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-6 px-16 my-8 rounded">Send</button>
                     </div>
                 </form>

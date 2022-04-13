@@ -9,8 +9,8 @@ class IndexController extends Controller
 {
 
     public function index() {
+        return view('Mainpage', ['projects' => Project::where('active',1)->get()]);
 
-        return view('Mainpage', ['projects' => Project::all()]);
     }
 
 }

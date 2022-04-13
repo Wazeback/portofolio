@@ -35,15 +35,23 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        $path = $request->file('image')->store('image', ['disk'=>'public']);
-        Project::create([
-            'title' => $request->title,
-            'description' => $request->desc,
-            'progress' => $request->progress,
-            'picture' => $path,
-            'active'  => 1,
+        $request->validate([
+            'title'  => 'required|min:4',
+            'desc' => 'required',
+            'image' => 'required'
+        ]);
 
-         ]);
+        if ($request->hasFile('image' )) {
+            $path = $request->file('image')->store('image', ['disk' => 'public']);
+            Project::create([
+                'title' => $request->title,
+                'description' => $request->desc,
+                'progress' => $request->input('progress', 0),
+                'picture' => $path,
+                'active' => 1,
+                'language_id' => 1
+            ]);
+        }
          return redirect()->back();
     }
 
@@ -55,9 +63,7 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        return view('projects.edit', [
-            'project' => $project
-        ]);
+        return view('projects.edit', ['project' => $project]);
 
     }
 
@@ -73,6 +79,7 @@ class ProjectController extends Controller
         // validatie
         $request->validate([
            'title'  => 'required|min:4'
+
         ]);
         // opslaan
         $path = $request->file('image')->store('image', ['disk'=>'public']);

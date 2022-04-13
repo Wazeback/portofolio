@@ -15,15 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', ['App\Http\Controllers\IndexController::class', 'show'])->middleware(['auth'])->name('dashboard');
 
-
 Route::get('/', ['App\http\Controllers\IndexController', 'index']);
 
-Route::get('/dashboard', function() {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', function() { return view('dashboard'); })->middleware(['auth'])->name('dashboard');
 
-Route::resource('projects', \App\Http\Controllers\ProjectController::class)
-    ->middleware(['auth']);
+Route::resource('projects', \App\Http\Controllers\ProjectController::class)->middleware(['auth']);
 
+Route::resource('mails', \App\Http\Controllers\MailController::class);
 
 require __DIR__.'/auth.php';

@@ -13,6 +13,17 @@ class Project extends Model
         'description',
         'picture',
         'progress',
-        'active'
+        'active',
+        'language_id'
     ];
+
+    public function languages() {
+        return $this->belongsToMany(Language::class, 'project_language');
+    }
+
+    public function language() {
+        return $this->belongsTo(language::class);
+    }
+
+
 }

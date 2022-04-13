@@ -21,6 +21,9 @@
                     <x-nav-link :href="route('projects.create')" :active="request()->routeIs('adding.create')">
                         {{ __('Add Projects') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('mails.index')" :active="request()->routeIs('mails.display')">
+                        {{ __('Mail Inbox') }}
+                    </x-nav-link>
                 </div>
             </div>
 
