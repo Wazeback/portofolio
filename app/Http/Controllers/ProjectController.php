@@ -14,7 +14,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('projects.index', ['projects' => Project::where('active',1)->get()]);
+        return view('projects.index', ['projects' => Project::paginate(5)]);
     }
 
     /**
@@ -37,7 +37,7 @@ class ProjectController extends Controller
     {
         $request->validate([
             'title'  => 'required|min:4',
-            'desc' => 'required',
+            'desc' => 'required|min:14',
             'image' => 'required'
         ]);
 
@@ -78,8 +78,9 @@ class ProjectController extends Controller
     {
         // validatie
         $request->validate([
-           'title'  => 'required|min:4'
-
+            'title'  => 'required|min:4',
+            'desc' => 'required|min:14',
+            'image' => 'required'
         ]);
         // opslaan
         $path = $request->file('image')->store('image', ['disk'=>'public']);
@@ -100,9 +101,10 @@ class ProjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Project $project)
     {
-        project::find($id)->delete();
+        $project->languages()->sync([]);
+        $project->delete();
         return back();
     }
 }

@@ -36,8 +36,13 @@ class MailController extends Controller
      */
     public function store(Request $request)
     {
-
-
+        // validatie
+        $request->validate([
+            'name'  => 'required|min:2',
+            'mail' => 'required|min:4',
+            'message' => 'required|min:4'
+        ]);
+        // opslaan
         Mail::create([
             'name' => $request->name,
             'mail' => $request->mail,

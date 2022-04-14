@@ -11,6 +11,7 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     <div>
                         <h1 class="text-center text-4xl text-blue-600">ALL PROJECTS</h1>
+                        {{$projects->links()}}
                         <table class="w-full table-fixed border-[1px] border-black px-2">
                             <thead>
                                 <tr>
@@ -37,8 +38,8 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <a href="{{ route('projects.edit', ['project'  => $project]) }}">Bewerken</a>
-                                            <form action="{{ route('projects.destroy', ['project'  => $project->id]) }}" method="post">@csrf @method('DELETE') <button type="submit">/verwijderen </button> </form>
+                                            <a href="{{ route('projects.edit', ['project'  => $project]) }}">Edit projects</a>
+                                            <form action="{{ route('projects.destroy', ['project'  => $project->id]) }}" method="post">@csrf @method('DELETE') <button type="submit">Delete products </button> </form>
                                         </td>
                                     </tr>
                                 @endforeach

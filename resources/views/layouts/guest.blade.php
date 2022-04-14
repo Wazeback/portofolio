@@ -96,7 +96,7 @@
             </div>
                 </div>
                 <div class="flex justify-center">
-                    <a href="{{ asset ('/contact') }}" class="underline text-blue-600 decoration-indigo-500">contact me</a>
+                    <a href="{{ asset ('#scrollToContact') }}" class="underline text-blue-600 decoration-indigo-500">contact me</a>
                 </div>
             </div>
         </div>

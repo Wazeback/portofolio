@@ -95,11 +95,11 @@
                     @csrf
                     <div class="flex flex-col justify-center items-center">
                         <label class="text-4xl pt-12" for="name">Full name:</label>
-                        <input type="text" name="name" class="w-1/2 h-16 border-8 rounded-full border-4 border-grey text-center" placeholder="Enter your name here...">
+                        <input type="text" name="name" class="w-1/2 h-16 border-8 rounded-full border-4 border-grey text-center" placeholder="Enter your name here..." required>
                         <label class="text-4xl pt-6" for="mail">Email:</label>
-                        <input type="email" name="mail" class="w-1/2 h-16 border-8 rounded-full border-4 border-grey text-center" placeholder="name@example.com">
+                        <input type="email" name="mail" class="w-1/2 h-16 border-8 rounded-full border-4 border-grey text-center" placeholder="name@example.com" required>
                         <label class="text-4xl pt-6" for="message">Your question</label>
-                        <textarea type="text" name="message" class="w-3/4 h-64 border-8 border-4 border-grey rounded-lg md:rounded-full text-center pt-[1%]" placeholder="Enter your name here..."></textarea>
+                        <textarea type="text" name="message" class="w-3/4 h-64 border-8 border-4 border-grey rounded-lg md:rounded-full text-center pt-[1%]" placeholder="Enter your name here..." required></textarea >
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-6 px-16 my-8 rounded">Send</button>
                     </div>
                 </form>

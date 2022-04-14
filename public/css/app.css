@@ -456,6 +456,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-12 {
   margin: 3rem;
 }
+.m-8 {
+  margin: 2rem;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -629,6 +632,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-12 {
   height: 3rem;
+}
+.h-\[10vh\] {
+  height: 10vh;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -952,6 +958,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-6 {
   padding: 1.5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
 .p-\[10px\] {
   padding: 10px;
 }
@@ -1092,6 +1101,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-8xl {
   font-size: 6rem;

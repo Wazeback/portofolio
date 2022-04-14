@@ -17,7 +17,8 @@ class Project extends Model
         'language_id'
     ];
 
-    public function languages() {
+    public function languages()
+    {
         return $this->belongsToMany(Language::class, 'project_language');
     }
 
