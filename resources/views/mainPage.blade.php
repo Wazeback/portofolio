@@ -62,9 +62,11 @@
                         @foreach($projects as $project)
                             <div class="w-full md:w-[30%] h-[100%] px-0 md:px-4 flex-shrink-0 mx-0 md:mx-10 snap-end snap-start">
                                 <div class="w-full h-1/2 bg-black">
-                                    <img class="h-full w-full" src="{{ asset( 'storage/' . $project->picture ) }}" alt="">a
+                                    <img class="h-full w-full" src="{{ asset( 'storage/' . $project->picture ) }}" alt="">
                                 </div>
-                                {{ $project->language->name }}
+                                @foreach( $project->languages AS $language )
+                                    <span class="p-2 bg-indigo-500 text-center rounded-lg">{{ $language->name }}</span>
+                                @endforeach
                                 <div class="text-2xl flex justify-center text-blue font-bold text-lg py-[3%]">
                                     {{ $project -> title }}
                                     @if ($project->progress == 1)

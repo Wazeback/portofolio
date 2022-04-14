@@ -24,7 +24,8 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('projects.adding', ['projects' => Project::all()]);
+//        return redirect(return redirect()->back();)->back();
+        return view('projects.index', ['projects' => Project::all()]);
     }
 
     /**
@@ -91,7 +92,6 @@ class ProjectController extends Controller
 
 
         $project->save();
-        // terugsturen ergens heen (projecten denk ik)
         return redirect()->view('projects.index', ['projects' => Project::all()]);
     }
 

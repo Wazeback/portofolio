@@ -39,7 +39,7 @@ class MailController extends Controller
         // validatie
         $request->validate([
             'name'  => 'required|min:2',
-            'mail' => 'required|min:4',
+            'mail' => 'required|min:5',
             'message' => 'required|min:4'
         ]);
         // opslaan
